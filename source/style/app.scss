@@ -91,6 +91,8 @@ input::-ms-clear {
 .subtitle{
   font-size: 34px;
   color: #444444;
+  width: 100%;
+  text-align: center;
 }
 
 .section {
@@ -115,7 +117,7 @@ input::-ms-clear {
 
 @media screen and (max-width: 1190px){
   .wrapper {
-    width: 100%;
+    width: 1024px;
     padding-right: 10px;
     padding-left: 10px;
 
@@ -137,6 +139,10 @@ input::-ms-clear {
   .section {
     padding: 40px 0;
   }
+
+  .wrapper{
+    width: 768px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -146,6 +152,10 @@ input::-ms-clear {
   }
   .section {
     padding: 30px 0;
+  }
+
+  .wrapper {
+    width: 100%;
   }
 }
 
