@@ -86,7 +86,13 @@ input::-ms-clear {
   text-align: center;
   line-height: 38px;
   font-weight: 900;
-  color: #1d1d1d
+  color: #1d1d1d;
+  &_bg{
+    background-image: url(../img/title_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 0 15px;
+  }
 }
 .subtitle{
   font-size: 34px;
@@ -117,7 +123,7 @@ input::-ms-clear {
 
 @media screen and (max-width: 1190px){
   .wrapper {
-    width: 1024px;
+    max-width: 1024px;
     padding-right: 10px;
     padding-left: 10px;
 
@@ -126,14 +132,20 @@ input::-ms-clear {
     padding: 60px 0;
   }
   .title {
-    font-size: 36px;
+    font-size: 38px;
+  }
+  .subtitle {
+    font-size: 30px;
   }
 }
 
 @media (max-width: 1023px){
   .title {
-    font-size: 39px;
+    font-size: 36px;
     line-height: 39px;
+  }
+  .subtitle{
+    font-size: 26px
   }
 
   .section {
@@ -141,30 +153,35 @@ input::-ms-clear {
   }
 
   .wrapper{
-    width: 768px;
+    max-width: 768px;
   }
+
 }
 
 @media (max-width: 767px) {
   .title {
-    font-size: 34px;
+    font-size: 31px;
     line-height: 34px;
+  }
+  .subtitle{
+    font-size: 21px;
   }
   .section {
     padding: 30px 0;
   }
 
   .wrapper {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
 
 @media (max-width: 480px) {
   .title {
-    font-size: 29px;
+    font-size: 26px;
     line-height: 29px;
   }
+  
 
   .section {
     padding: 25px 0;

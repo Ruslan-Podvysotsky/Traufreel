@@ -40,7 +40,7 @@
         border-top: 0;
         border-right: 0;
         border-bottom: 0;
-        left: calc(50% - 10px);
+        left: calc(50% - 1px);
         top: 70px;
       }
     }
@@ -145,7 +145,7 @@
         left: 458px;
         top: 320px;
         background-color: #fff;
-
+        box-shadow: none !important;
         &::before {
           content: '';
           width: 247px;
@@ -304,5 +304,57 @@
     & img {
       width: 100%;
     }
+  }
+}
+
+.consequence__description:hover .consequence__description-point{
+  box-shadow: (0px 0px 0px 5px rgba(246,225,160,0.7), 0px 0px 0px 10px rgba(253,243,210,0.5));
+}
+
+@media screen and (max-width: 1190px) {
+  .consequence__left {
+      width: 206px;
+  }
+
+  .consequence__description {
+      font-size: 16px;
+  }
+
+  .consequence__right {
+      width: 201px;
+  }
+
+  .consequence__description-point.one {
+      left: 490px;
+  }
+
+  .consequence__description-point.two {
+      left: 398px;
+  }
+
+  .consequence__description-point.two::before {
+      width: 254px;
+      top: -136px;
+      left: -189px;
+  }
+
+  .consequence__description-point.three{
+      left: 472px;
+  }
+
+  .consequence__description-point.four{
+      right: 532px;
+  }
+  .consequence__description-point.fife{
+      right: 509px;
+  }
+  .consequence__description-point.six{
+      right: 468px;
+  }
+  .consequence__description::before{
+      font-size: 44px;
+  }
+  .consequence__description_left:nth-child(1)::before{
+      top: 21px;
   }
 }

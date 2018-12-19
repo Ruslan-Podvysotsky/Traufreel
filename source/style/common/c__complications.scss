@@ -1,0 +1,123 @@
+.complications {
+    background: #fffbf3 url(../img/section__background.png);
+    position: relative;
+
+    & .wrapper {
+        width: 100%;
+    }
+
+    &__conclusion {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 59px;
+        font-size: 21px;
+        color: #666666;
+
+        &_font {
+            font-size: 22px;
+            color: #1d1d1d;
+            font-weight: 500;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        border: 16px solid transparent;
+        border-top: 28px solid #f48532;
+        top: 0;
+        left: calc(50% - 15px);
+    }
+
+    & .title {
+        width: 900px;
+        margin: 0 auto;
+        line-height: 1;
+    }
+
+    &.section {
+        padding: 90px 0;
+    }
+}
+
+.enumeration {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 66px;
+
+    &__cont {
+        width: 271px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        width: 271px;
+        height: 271px;
+        box-sizing: border-box;
+        border: 18px solid #ffd696;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: relative;
+
+        & img {
+            width: 100%;
+        }
+
+        &::before {
+            content: '1';
+            width: 55px;
+            height: 55px;
+            background-color: #f4771b;
+            font-size: 32px;
+            color: #fff;
+            font-weight: 900;
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: -30px;
+            left: calc(50% - 27px);
+        }
+
+        &.two::before {
+            content: '2';
+        }
+
+        &.three::before {
+            content: '3';
+        }
+
+        &.four::before {
+            content: '4';
+        }
+    }
+
+    &__title {
+        font-size: 22px;
+        color: #1d1d1d;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 28px;
+    }
+
+    &__description {
+        font-size: 18px;
+        color: #444444;
+        margin-top: 37px;
+        text-align: center;
+        line-height: 1.4;
+
+        &_margin {
+            margin-top: 9px;
+        }
+    }
+
+}
+
