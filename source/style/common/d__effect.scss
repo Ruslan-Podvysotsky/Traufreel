@@ -1,0 +1,222 @@
+.effect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 81px;
+
+    & .wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 72px;
+    }
+
+    &__product {
+        position: relative;
+        width: 421px;
+        z-index: 5;
+
+        &::before {
+            content: '';
+            width: 700px;
+            height: 452px;
+            background-image: url('../img/effect__bg.png');
+            position: absolute;
+            z-index: -1;
+            left: -212px;
+            top: -90px;
+            background-size: cover;
+        }
+
+        &_width {
+            width: 100%;
+        }
+
+        &-position {
+            width: 124px;
+            position: absolute;
+            bottom: 0;
+            left: -57px;
+
+            &_width {
+                width: 100%;
+            }
+        }
+    }
+
+    &__table {
+        display: flex;
+        width: 557px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-cont {
+            display: flex;
+            min-height: 86px;
+            width: 100%;
+
+            &:nth-child(2) {
+                border: 1px solid #bdbdbd;
+                border-style: dashed;
+                border-left: none;
+                border-right: none;
+            }
+        }
+
+        &-list {
+            font-size: 19px;
+            color: #1d1d1d;
+            font-weight: bold;
+            position: relative;
+            width: 253px;
+
+            &:nth-child(1) {
+                border-right: 1px solid #bdbdbd;
+                border-style: dashed;
+                border-left: none;
+                border-top: none;
+                border-bottom: none;
+            }
+
+            &.two {
+                padding-top: 43px;
+                padding-bottom: 42px;
+            }
+
+            &.three {
+                padding-top: 44px;
+            }
+
+            &_mod {
+                font-size: 18px;
+                color: #444444;
+                font-weight: 400;
+                padding-left: 25px;
+                width: 310px;
+            }
+
+            &_position {
+                position: absolute;
+                left: -150px;
+
+                &.one {
+                    top: -25px;
+                }
+
+                &.two {
+                    top: 20px;
+                }
+
+                &.three {
+                    top: 15px;
+                    left: -140px;
+                }
+            }
+        }
+    }
+
+    &__button {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .effect__product {
+        position: relative;
+        width: 351px;
+        z-index: 5;
+        margin-left: 49px;
+    }
+
+    .effect__product-position {
+        width: 104px;
+        left: -49px;
+    }
+
+    .effect__table {
+        width: 457px;
+    }
+
+    .effect__table-list {
+        font-size: 16px;
+    }
+
+    .effect__table-list_mod {
+        font-size: 15px;
+        padding-left: 17px;
+    }
+
+}
+
+@media screen and (max-width: 1023px){
+    .effect__cont{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .effect__table{
+        margin-left: 130px;
+    }
+    .effect__product{
+        margin-top: 60px;
+    }
+    .effect__button{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .effect__cont{
+        margin-top: 20px;
+    }
+    .effect__table{
+        width: 300px;
+        margin-left: 0;
+    }
+    .effect__table-cont{
+        flex-direction: column;
+        min-height: auto;
+        align-items: center;
+    }
+    .effect__table-list_position{
+        position: static;
+    }
+    .effect__table-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .effect__table-list:nth-child(1){
+        border-right: none;
+    }
+    .effect__table-list_mod{
+        padding: 20px 0 20px !important;
+    }
+    .effect__table-list.two{
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+    .effect__table-list.three{
+        padding-top: 20px;
+    }
+    .effect__product{
+        width: 300px;
+        margin-top: 10px;
+    }
+    .effect__product-position{
+        width: 87px;
+        left: -41px;
+    }
+    .effect__button{
+        margin-top: 20px;
+    }
+}

@@ -1,7 +1,7 @@
 .complications {
     background: #fffbf3 url(../img/section__background.png);
     position: relative;
-
+    padding: 90px 0;
     & .wrapper {
         width: 100%;
     }
@@ -36,9 +36,6 @@
         line-height: 1;
     }
 
-    &.section {
-        padding: 90px 0;
-    }
 }
 
 .enumeration {
@@ -55,8 +52,8 @@
     }
 
     &__img {
-        width: 271px;
-        height: 271px;
+        width: 100%;
+        
         box-sizing: border-box;
         border: 18px solid #ffd696;
         display: flex;
@@ -121,3 +118,58 @@
 
 }
 
+@media screen and (max-width: 1190px){
+    .complications{
+        padding: 0;
+    }
+    .enumeration__cont{
+        width: 230px;
+    }
+    .enumeration__title{
+        font-size: 18px;
+    }
+    .enumeration__description{
+        font-size: 16px;
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .enumeration{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 25px;
+    }
+    .complications .title{
+        width: 100%;
+    }
+    .enumeration__cont{
+        width: 250px;
+        &:nth-child(3){
+            margin-top: 20px;
+        }
+        &:nth-child(4){
+            margin-top: 20px;
+        }
+    }
+    .enumeration__description{
+        margin-top: 25px;
+    }
+    .enumeration__description_margin{
+        margin-top: 5px;
+    }
+    .complications__conclusion{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .enumeration{
+        flex-direction: column;
+        align-items: center;
+    }
+    .enumeration__cont:nth-child(2){
+        margin-top: 20px;
+    }
+}
