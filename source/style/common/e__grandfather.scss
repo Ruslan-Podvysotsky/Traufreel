@@ -1,0 +1,144 @@
+.grandfather {
+    background: #fffbf2 url(../img/grandfather__bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 66px;
+    padding-bottom: 66px;
+
+    & .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__left {
+        width: 659px;
+    }
+
+    &__right {
+        width: 653px;
+        position: absolute;
+        right: -166px;
+        bottom: -69px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-size: 27px;
+        color: #1d1d1d;
+        font-weight: 900;
+        margin-bottom: 29px;
+        position: relative;
+        &::after{
+            content: '”';
+            font-size: 194px;
+            color: #f4771b;
+            font-weight: 900;
+            position: absolute;
+            right: -40px;
+            top: -10px;
+        }
+    }
+
+    &__description {
+        font-size: 17px;
+        color: #444444;
+        margin-bottom: 34px;
+        line-height: 1.53;
+        width: 100%;
+    }
+
+    &__name {
+        width: 480px;
+        font-size: 21px;
+        color: #444444;
+        font-weight: 400;
+        margin-top: 49px;
+
+        &_orange {
+            color: #f4771b;
+        }
+
+        &_black {
+            color: #1d1d1d;
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (max-width: 1190px){
+    .grandfather__left{
+        width: 530px;
+    }
+    .grandfather__title {
+        font-size: 23px;
+    }
+    .grandfather__description {
+        font-size: 16px;
+    }
+    .grandfather__right{
+        bottom: -64px;
+    }
+    .grandfather__title::after{
+        right: -70px;
+    }
+}
+@media screen and (max-width: 1023px){
+    .grandfather{
+        background: #fffbf2;
+    }
+    .grandfather .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .grandfather__right{
+        position: static;
+        width: 470px;
+        margin-bottom: -3px;
+        margin-top: 30px;
+    }
+    .grandfather.section{
+        padding-bottom: 0 !important;
+    }
+    .grandfather__title{
+        margin-bottom: 20px;
+    }
+    .grandfather__description{
+        margin-bottom: 20px;
+    }
+    .grandfather__name{
+        width: 450px;
+        font-size: 17px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .grandfather__left{
+        width: 460px;
+    }
+    .grandfather__title {
+        font-size: 20px;
+    }
+    .grandfather__description{
+        font-size: 15px;
+    }
+    .grandfather__title::after{
+        content: none;
+    }
+}
+@media screen and (max-width: 480px){
+    .grandfather__left{
+        width: 100%;
+    }
+    .grandfather__right{
+        width: 100%;
+    }
+    .grandfather__name{
+        width: 100%;
+    }
+}
