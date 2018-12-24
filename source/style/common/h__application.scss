@@ -1,0 +1,173 @@
+.application {
+    & .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__button{
+        margin-top: 44px;
+    }
+}
+
+.instructions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 54px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &-img {
+            width: 135px;
+            position: relative;
+
+            & img {
+                width: 100%;
+                display: block;
+            }
+
+            &_number {
+                width: 37px;
+                height: 37px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f4771b;
+                color: #fff;
+                font-size: 21px;
+                font-weight: bold;
+                border-radius: 50%;
+                position: absolute;
+                top: 8px;
+                right: 0px;
+            }
+        }
+
+        &-description {
+            color: #444444;
+            font-size: 18px;
+            margin-left: 17px;
+            line-height: 1.4;
+        }
+    }
+}
+
+.recomendation {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 74px;
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+        &-people {
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 102px;
+                height: 2px;
+                background-color: #e3e3e3;
+                position: absolute;
+                bottom: 2px;
+                left: -19px;
+            }
+        }
+
+        &-age {
+            text-align: center;
+            margin-top: 35px;
+            color: #000000;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        &-course {
+            color: #444444;
+            font-size: 18px;
+            margin-top: 15px;
+            text-align: center;
+        }
+    }
+
+    &__product {
+        width: 421px;
+        position: relative;
+        z-index: 5;
+        & img {
+            width: 100%;
+        }
+
+        &::before {
+            content: '';
+            width: 700px;
+            height: 452px;
+            background-image: url(../img/effect__bg.png);
+            position: absolute;
+            z-index: -1;
+            left: -179px;
+            top: -96px;
+            background-size: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 1190px){
+    .instructions__item-img{
+        width: 95px;
+    }
+    .instructions__item-description{
+        font-size: 16px;
+    }
+    .recomendation__description-age{
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    .recomendation__description-course{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .recomendation__product{
+        width: 341px;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .instructions{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .instructions__item:nth-child(3){
+        margin-top: 20px;
+    }
+    .recomendation__description-age{
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .recomendation__product{
+        width: 300px;
+    }
+    .application__button{
+        margin-top: 34px;
+    }
+    .recomendation{
+        margin-top: 44px;
+    }
+    .instructions{
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .instructions{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
