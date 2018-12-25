@@ -52,8 +52,8 @@
     }
 
     &__img {
-        width: 100%;
-        
+        width: 271px;
+        height: 271px;
         box-sizing: border-box;
         border: 18px solid #ffd696;
         display: flex;
@@ -110,7 +110,7 @@
         margin-top: 37px;
         text-align: center;
         line-height: 1.4;
-
+        width: 100%;
         &_margin {
             margin-top: 9px;
         }
@@ -132,6 +132,10 @@
         font-size: 16px;
         margin-top: 32px;
     }
+    .enumeration__img{
+        width: 230px;
+        height: 230px;
+    }
 }
 
 @media screen and (max-width: 1023px){
@@ -151,6 +155,10 @@
         &:nth-child(4){
             margin-top: 20px;
         }
+    }
+    .enumeration__img{
+        width: 250px;
+        height: 250px;
     }
     .enumeration__description{
         margin-top: 25px;
